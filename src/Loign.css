@@ -1,0 +1,25 @@
+.login {
+    background-color: #ffffff;
+    font-family: 'Mulish';
+}
+.login_title{
+    font-size: 32px;
+    font-weight: 900;
+}
+.login_subtitle{
+    font-size: 14px;
+}
+.login_label_emaill{
+    margin-bottom: 5px;
+}
+.login_label_password{
+    margin-bottom: 5px;
+}
+.login_under_title{
+    font-size: 24px;
+    font-weight: 800;
+}
+.login_under_subtitle{
+    font-size: 32px;
+    font-weight: 800;
+}
