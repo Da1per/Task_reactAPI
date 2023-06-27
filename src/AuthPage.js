@@ -1,7 +1,7 @@
 
 import { Resource, useAuthenticated} from 'react-admin'
 import { Title, useGetList,Login} from 'react-admin';
-import './Loign.css'
+import './css/Loign.css'
 import imgAvatars from "./img/Reg_Back.png"
 import * as React from 'react';
 import { useState } from 'react';
@@ -44,6 +44,7 @@ function AuthPage() {
                 placeholder="Enter your email"
                 value={email}
                 type="email"
+                source="email"
                 required
                 onChange={e => setEmail(e.target.value)}
               />
