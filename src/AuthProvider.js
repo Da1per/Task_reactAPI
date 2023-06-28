@@ -38,7 +38,7 @@ const authProvider = {
         const status = error.status;
         if (status === 401 || status === 403) {
             localStorage.removeItem('auth');
-            return Promise.reject();
+            return Promise.resolve('/login');
         }
         // other error code (404, 500, etc): no need to log out
         return Promise.resolve();

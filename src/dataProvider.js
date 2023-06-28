@@ -1,4 +1,4 @@
-import {Admin, Resource,CustomRoutes,Login,fetchUtils,useGetList,Loading} from 'react-admin'
+import {fetchUtils} from 'react-admin'
 import simpleRestProvider from 'ra-data-simple-rest';
 
 const httpClient = (url, options = {}) => {

@@ -2,12 +2,8 @@
 import './css/App.css';
 import authProvider from './AuthProvider';
 import AuthPage from './AuthPage'
-import Main from './Main';
-import {Admin, Resource,CustomRoutes,Login,fetchUtils,useGetList,Loading} from 'react-admin'
-import lb4Provider from 'react-admin-lb4'
-import { Route } from "react-router-dom";
+import {Admin, Resource} from 'react-admin'
 import { PostList } from './Main/post';
-import simpleRestProvider from 'ra-data-simple-rest';
 import CustomLayout from './Main/CustomLayout';
 import dataProvider from './dataProvider';
 
