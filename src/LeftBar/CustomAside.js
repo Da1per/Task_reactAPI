@@ -1,7 +1,5 @@
 
-
-import * as React from 'react';
-import {FilterForm,AutocompleteInput,TextInput,Count} from 'react-admin';
+import {FilterForm,AutocompleteInput,TextInput,useListContext,useStore   } from 'react-admin';
 import { Box} from '@mui/material';
 import { useEffect, useState } from 'react';
 import  dataProvider  from '../dataProvider';
@@ -9,10 +7,14 @@ import jobTitleSvg from '../img/Job_title_svg.svg'
 import LocationSvg from '../img/Location_svg.svg'
 import IndustrySvg from '../img/Industry_svg.svg'
 function CustomAside( ) {
-    
+  const { total } = useListContext();
+  const [totalValue,setTotalValue] = useStore('total.value', '2M');
+  useEffect(() => {
+    setTotalValue(total)
+  },[total])
     const [country, setCountry] = useState(null);
     const [industry, setIndustry] = useState(null);
-
+   
     useEffect(() => {
       const fetchData = async () => {
         try {
@@ -27,7 +29,7 @@ function CustomAside( ) {
       fetchData();
     }, [dataProvider]);
 
-    console.log(country)
+
 
     const postFilters = [
         <TextInput  label="Search by job title" sx={{width:'204px'}} source="job_title" alwaysOn />,
@@ -38,9 +40,11 @@ function CustomAside( ) {
     const postFiltersIndustry= [
     <AutocompleteInput label="Choose industry" sx={{width:'204px'}}  source="industry"  choices={industry} alwaysOn/>, 
     ];
-    
+    const [filterState,filterStateSet] = useStore('filter.state', 'false');
+    const setState=()=>{filterStateSet(true)}
+   
     return (
-        <Box sx={{width:'17.15%',padding:'0 0 0 1.11%',order: -1,}}>
+        <Box sx={{width:'17.15%',padding:'0 0 0 1.11%',order: -1,}} onClick={setState}>
             <Box sx={{padding:'15% 0 0 0%',borderBottom:'1px solid #E7E8EF'}}>
                     <h2>Filters</h2>
             </Box>
