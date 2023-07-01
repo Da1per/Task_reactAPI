@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Task_reactAPI/static/css/main.83ef47a3.css",
-    "main.js": "/Task_reactAPI/static/js/main.249772d2.js",
+    "main.js": "/Task_reactAPI/static/js/main.b3e764f5.js",
     "static/media/Reg_Back.png": "/Task_reactAPI/static/media/Reg_Back.cb4aa650f09f3706cf12.png",
     "static/media/Empty_State_1.png": "/Task_reactAPI/static/media/Empty_State_1.bf8f100933da30336446.png",
     "static/media/Job_title_svg.svg": "/Task_reactAPI/static/media/Job_title_svg.9a8034490a6e1009ee3eed49f10d04a2.svg",
@@ -10,10 +10,10 @@
     "index.html": "/Task_reactAPI/index.html",
     "static/media/ArrowLeft.svg": "/Task_reactAPI/static/media/ArrowLeft.f5437f9884733d5fa9fcf939f98286fa.svg",
     "main.83ef47a3.css.map": "/Task_reactAPI/static/css/main.83ef47a3.css.map",
-    "main.249772d2.js.map": "/Task_reactAPI/static/js/main.249772d2.js.map"
+    "main.b3e764f5.js.map": "/Task_reactAPI/static/js/main.b3e764f5.js.map"
   },
   "entrypoints": [
     "static/css/main.83ef47a3.css",
-    "static/js/main.249772d2.js"
+    "static/js/main.b3e764f5.js"
   ]
 }
